@@ -112,6 +112,19 @@ alias xampp='sudo /opt/lampp/manager-linux-x64.run'
 source /home/shrut/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias vs='code .'
 
+# GitHub shortcuts
+
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add .'
+alias gc='git commit'
+alias gcmsg='git commit -m'
+alias gp='git push'
+alias gpl='git pull'
+alias gpom='git push origin main'
+alias gl='git log --oneline'
+
 
 function mkcd
 {
