@@ -106,8 +106,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mails='xdg-open https://mail.google.com/mail/u/0;xdg-open https://mail.google.com/mail/u/1;xdg-open https://mail.google.com/mail/u/2;xdg-open https://mail.google.com/mail/u/3;exit;'
-alias work='cd ~;cd work;'
+alias wk='cd ~;cd work;'
 alias song='cd ~;cd Music;xdg-open mylist.xspf;exit'
 alias xampp='sudo /opt/lampp/manager-linux-x64.run'
 source /home/shrut/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias vs='code .'
+
+
+function mkcd
+{
+  command mkdir $1 && cd $1
+}
